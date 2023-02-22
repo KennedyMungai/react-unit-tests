@@ -4,11 +4,16 @@ const Greeting = () =>
 {
     const [changedText, setChangedText] = useState(false)
 
+    const changeTextHandler = () => 
+    {
+        setChangedText(true)
+    }
+
     return (
         <div>
             <h2>Hello World!</h2>
             <p> Insert Dumb Programming Joke</p>
-            <button onClick={ }>Change Text!</button>
+            <button onClick={changeTextHandler}>Change Text!</button>
         </div>
     )
 }
