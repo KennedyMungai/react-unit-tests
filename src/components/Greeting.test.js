@@ -47,8 +47,15 @@ describe('Greeting', () =>
         expect(changedElement).toBeInTheDocument()
     })
 
-    test('', () =>
+    test('tests the state of the rendering of one of the paragraphs inside the Greeting component', () =>
     {
+        // Arrange
+        render(<Greeting />)
 
+        // Act
+
+        // Assert
+        const paragraphElement = screen.getByText('Insert Dumb Programming Joke', { exact: false })
+        expect(paragraphElement).not.toBeInTheDocument()
     })
 })
