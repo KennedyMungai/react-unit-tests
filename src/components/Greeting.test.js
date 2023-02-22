@@ -37,6 +37,8 @@ describe('Greeting', () =>
         render(<Greeting />)
 
         // Act
+        const button = screen.getByRole('button')
+        userEvent.click()
 
         // Assert
         const dumbJokeElement = screen.getByText('insert dumb programming joke', {
