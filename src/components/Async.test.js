@@ -7,7 +7,7 @@ describe('Async component', () =>
     {
         // Arrange
         window.fetch = jest.fn()
-        window.fetch.mockResolvedValue()
+        window.fetch.mockResolvedValueOnce()
 
         render(<Async />)
 
