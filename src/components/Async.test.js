@@ -3,7 +3,7 @@ import Async from "./Async"
 
 describe('Async component', () => 
 {
-    test('renders posts if request succeeds', () =>
+    test('renders posts if request succeeds', async () =>
     {
         // Arrange
         render(<Async />)
@@ -11,7 +11,7 @@ describe('Async component', () =>
         // Act
 
         // Assert
-        const listItemElements = screen.getAllByRole('listitem')
+        const listItemElements = await screen.findAllByRole('listitem')
         expect(listItemElements).not.toHaveLength(0)
     })
 })
