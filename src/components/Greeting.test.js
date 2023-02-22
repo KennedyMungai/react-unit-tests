@@ -24,5 +24,9 @@ describe('Greeting', () =>
         // Act
 
         // Assert
+        const dumbJokeElement = screen.getByText('insert dumb programming joke', {
+            exact: false
+        })
+        expect(dumbJokeElement).toBeInTheDocument()
     })
 })
