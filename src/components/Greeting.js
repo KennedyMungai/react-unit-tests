@@ -13,8 +13,8 @@ const Greeting = () =>
     return (
         <div>
             <h2>Hello World!</h2>
-            <p> Insert Dumb Programming Joke</p>
-            {changedText && <p>Changed!</p>}
+            {!changedText && <Output> Insert Dumb Programming Joke</Output>}
+            {changedText && <Output>Changed!</Output>}
             <button onClick={changeTextHandler}>Change Text!</button>
         </div>
     )
