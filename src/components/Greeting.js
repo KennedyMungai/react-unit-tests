@@ -6,7 +6,7 @@ const Greeting = () =>
 
     const changeTextHandler = () => 
     {
-        setChangedText(true)
+        setChangedText((prevState) => !prevState)
     }
 
     return (
