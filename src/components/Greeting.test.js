@@ -58,6 +58,6 @@ describe('Greeting', () =>
 
         // Assert
         const paragraphElement = screen.queryByText('Insert Dumb Programming Joke', { exact: false })
-        expect(paragraphElement).not.toBeInTheDocument()
+        expect(paragraphElement).toBeNull()
     })
 })
