@@ -6,6 +6,6 @@ describe('Async component ', () =>
     test('renders posts correctly', () =>
     {
         // Arrange
-        render()
+        render(<Async />)
     })
 })
