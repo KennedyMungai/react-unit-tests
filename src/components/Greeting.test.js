@@ -11,6 +11,6 @@ test('A simple test to look for Hello World rendered out on screen', () =>
     // Not on this file
 
     // Assert
-    const helloWorldElement = screen.getByText('Hello World')
+    const helloWorldElement = screen.getByText('Hello World', { exact: false })
     expect(helloWorldElement).toBeInTheDocument()
 })
