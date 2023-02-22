@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import Greeting from './components/Greeting';
 
-function App() {
+function App()
+{
   return (
     <div className="App">
       <header className="App-header">
