@@ -53,6 +53,7 @@ describe('Greeting', () =>
         render(<Greeting />)
 
         // Act
+        const button = screen.getByRole('button')
 
         // Assert
         const paragraphElement = screen.getByText('Insert Dumb Programming Joke', { exact: false })
