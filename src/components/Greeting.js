@@ -12,7 +12,7 @@ const Greeting = () =>
     return (
         <div>
             <h2>Hello World!</h2>
-            {!changedText && <p> Insert Dumb Programming Joke</p>}
+            <p> Insert Dumb Programming Joke</p>
             {changedText && <p>Changed!</p>}
             <button onClick={changeTextHandler}>Change Text!</button>
         </div>
