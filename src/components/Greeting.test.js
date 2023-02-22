@@ -57,7 +57,7 @@ describe('Greeting', () =>
         userEvent.click(button)
 
         // Assert
-        const paragraphElement = screen.getByText('Insert Dumb Programming Joke', { exact: false })
-        expect(paragraphElement).toBeInTheDocument()
+        const paragraphElement = screen.queryByText('Insert Dumb Programming Joke', { exact: false })
+        expect(paragraphElement).not.toBeInTheDocument()
     })
 })
