@@ -29,4 +29,18 @@ describe('Greeting', () =>
         })
         expect(dumbJokeElement).toBeInTheDocument()
     })
+
+    test('Rendered "Changed!" if the button was clicked', () => 
+    {
+        //Arrange
+        render(<Greeting />)
+
+        // Act
+
+        // Assert
+        const dumbJokeElement = screen.getByText('insert dumb programming joke', {
+            exact: false
+        })
+        expect(dumbJokeElement).toBeInTheDocument()
+    })
 })
