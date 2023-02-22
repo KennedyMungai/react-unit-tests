@@ -7,7 +7,9 @@ describe('Async component', () =>
     {
         // Arrange
         window.fetch = jest.fn()
-        window.fetch.mockResolvedValueOnce()
+        window.fetch.mockResolvedValueOnce({
+            json: async () => [{ id: 'p1', title: 'First post' }]
+        })
 
         render(<Async />)
 
