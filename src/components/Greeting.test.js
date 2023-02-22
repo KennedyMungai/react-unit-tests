@@ -54,6 +54,7 @@ describe('Greeting', () =>
 
         // Act
         const button = screen.getByRole('button')
+        userEvent.click(button)
 
         // Assert
         const paragraphElement = screen.getByText('Insert Dumb Programming Joke', { exact: false })
