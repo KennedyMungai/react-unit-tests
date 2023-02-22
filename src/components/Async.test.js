@@ -6,6 +6,7 @@ describe('Async component', () =>
     test('renders posts if request succeeds', async () =>
     {
         // Arrange
+        window.fetch = jest.fn()
         render(<Async />)
 
         // Act
