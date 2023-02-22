@@ -41,9 +41,9 @@ describe('Greeting', () =>
         userEvent.click(button)
 
         // Assert
-        const dumbJokeElement = screen.getByText('insert dumb programming joke', {
+        const changedElement = screen.getByText('Changed', {
             exact: false
         })
-        expect(dumbJokeElement).toBeInTheDocument()
+        expect(changedElement).toBeInTheDocument()
     })
 })
