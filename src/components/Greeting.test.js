@@ -15,4 +15,14 @@ describe('Greeting', () =>
         const helloWorldElement = screen.getByText('Hello World', { exact: false })
         expect(helloWorldElement).toBeInTheDocument()
     })
+
+    test('A simple test to check out the effectiveness of some text switching functionality of the app', () =>
+    {
+        //Arrange
+        render(<Greeting />)
+
+        // Act
+
+        // Assert
+    })
 })
