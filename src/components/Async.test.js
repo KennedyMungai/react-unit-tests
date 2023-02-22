@@ -12,5 +12,6 @@ describe('Async component', () =>
 
         // Assert
         const listItemElements = screen.getAllByRole('listitem')
+        expect(listItemElements).not.toHaveLength(0)
     })
 })
